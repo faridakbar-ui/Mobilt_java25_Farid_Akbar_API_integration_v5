@@ -10,23 +10,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weather App"
+        android:text="Sökhistorik"
         android:textSize="28sp"
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/historyText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Välkommen!"
+        android:text="Dina tidigare sökningar visas här."
         android:textSize="18sp"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/searchPageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sök väder"
         android:layout_marginTop="20dp" />
 
 </LinearLayout>
-
