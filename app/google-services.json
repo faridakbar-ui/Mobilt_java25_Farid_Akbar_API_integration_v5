@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "570519942621",
+    "project_id": "apiv5weather",
+    "storage_bucket": "apiv5weather.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570519942621:android:b99ce31b11fcf6dfaff234",
+        "android_client_info": {
+          "package_name": "com.gritacademy.api_v5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSHw30MNBqL-r8CRDCkmNtLH6KuQw6Gnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
