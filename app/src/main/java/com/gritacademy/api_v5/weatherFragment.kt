@@ -12,6 +12,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 import kotlin.concurrent.thread
+import com.google.firebase.database.FirebaseDatabase
 
 class WeatherFragment : Fragment() {
 
@@ -27,6 +28,12 @@ class WeatherFragment : Fragment() {
         val historyButton = view.findViewById<Button>(R.id.historyButton)
 
         val city = arguments?.getString("city") ?: "Okänd stad"
+
+        val database = FirebaseDatabase.getInstance(
+            "https://apiv5weather-default-rtdb.europe-west1.firebasedatabase.app/"
+        )
+
+        database.getReference("history").push().setValue(city)
         cityText.text = city
         weatherText.text = "Hämtar väder..."
 
